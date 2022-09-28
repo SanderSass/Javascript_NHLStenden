@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="../CSS/stylesheet.css">
+        <link rel="stylesheet", href="../CSS/slider.css">
+        <title>Assignment 5 - Memory</title>
+    </head>
+    <body>
+        <h1>Week 5</h1>
+        <div class="container">
+            <div class="timer">
+                Insert time<input type="number" min="1" id="timeInput" name='time'> 
+                <button onclick="startTimer(document.getElementById('timeInput').value)">Start Timer</button>
+                <div id="countdown"></div>
+            </div>
+        
+            <div class="unclickable" id="unclickable">
+                <div class="row">
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                </div>
+            
+                <div class="row">
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                </div>
+            
+                <div class="row">
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                </div>
+            
+                <div class="row">
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                    <div class="card hidden" onclick="onCardClicked(event)"></div>
+                </div>
+            </div>
+        </div>
+
+        <p><a href="../../index.html">Back to Main page</a></p>
+
+        <script src="../dependency/jquery.js"></script>
+        <script src="../javascript/Week_5/MemoryGame.js"></script>
+    </body>
+</html>

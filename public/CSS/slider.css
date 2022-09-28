@@ -1,0 +1,28 @@
+.slider {
+    position: relative;
+    width:265px;
+    height:350px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+.slider img {
+    width:265px;
+    height:350px;
+    position:absolute;
+    top:0;
+    opacity:0;
+}
+
+.slider_nav {
+    text-align: center;
+    border: 10px solid #7EA3CC;
+    border-radius: 6px;
+    width:150px;
+    background-color: #7EA3CC;
+    margin: 0 auto;
+}
+
+.slider_nav span {
+	color: white;
+    cursor:pointer;
+}

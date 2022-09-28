@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="../CSS/stylesheet.css">
+        <link rel="stylesheet", href="../CSS/slider.css">
+        <title>Assignment 3</title>
+    </head>
+    <body>
+        <h1>Week 3</h1>
+        
+        <h3>A</h3>
+        <button  onclick="displayQuote()">Open your fortune cookie</button>
+	    <p id="dispQuote"></p>
+        <h3></h3>
+
+        <h3>B - C</h3>
+        <div class="bg_container">
+            <div class="slider">
+           <img id="1" src="../img/1.jpg" border="0" alt="">
+           <img id="2" src="../img/2.jpg" border="0" alt="">
+           <img id="3" src="../img/3.jpg" border="0" alt="">
+           <img id="3" src="../img/4.jpg" border="0" alt="">
+        </div>
+        <div class="slider_nav">
+           <span name="prev"> previous </span> /
+            <span name="next"> next image </span>
+        </div>
+        <br>
+
+        <h3>D</h3>
+        <label>Add Item<input type="text" name="item" id="newItem"></label>
+        <button onclick="addItem($('#newItem').val())">add</button>
+        <ul id="list"></ul>
+
+        <p><a href="../../index.html">Back to Main page</a></p>
+
+        <script src="../dependency/jquery.js"></script>
+        <script src="../javascript/Week_3/FortuneCookie.js"></script>
+        <script src="../javascript/Week_3/Slide.js"></script>
+        <script src="../javascript/Week_3/AutomateSlideShow.js"></script>
+        <script src="../javascript/Week_3/ToDoList.js"></script>
+    </body>
+</html>

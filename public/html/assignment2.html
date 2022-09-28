@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet", href="../CSS/stylesheet.css">
+        <title>Assignment 2</title>
+    </head>
+    <body>
+        <h1>Week 2</h1>
+
+        <h3>A</h3>
+        <p id="class1"></p>
+        <p id="class2"></p>
+        <p id="class3"></p>
+        <p id="class4"></p>
+
+        <h3>B - C</h3>
+        <input type="text" name="number1" id="fDigit">
+        <input type="text" name="number1" id="sDigit">
+        <button onclick="calculator = new Calculator(document.getElementById('fDigit').value,document.getElementById('sDigit').value)">Create Calculator</button>
+
+        <br>
+
+        <button onclick="calculator.adding()">Addition</button>
+        <button onclick="calculator.substracting()">Substraction</button>
+        <button onclick="calculator.multiplying()">multiplying</button>
+        <button onclick="calculator.dividing()">dividing</button>
+        <button onclick="calculator.root()">root</button>
+        <p><label>Involution: write the exponential<input type="text" name="pow" id="pow"><button onclick="calculator.involution()">involution</button></label></p>
+            
+        <p id="result"></p>
+
+        <h3>D</h3>
+        <button onclick="document.getElementById('lyrics').innerHTML = song.displaySong();">Display song</button>
+        <button onclick="document.getElementById('lyrics').innerHTML = ''">hide song</button>
+	     <p id="lyrics"></p>
+
+        <h3>E</h3>
+        <p>Check palindrome: <input type="text" name="pal" id='pal'></p>
+	    <p><button onclick="palindrome(document.getElementById('pal').value)">Check</button></p>
+	    <p id="isPalindrome"></p>
+
+        <h3>F</h3>
+        <p>Convert text to morse code: <input type="text" name="morseConvert" id="morseConvert"></p>
+	    <p><button onclick="convert(document.getElementById('morseConvert').value)">Convert</button></p>
+	    <p id="convertedmorse"></p>
+
+        <p><a href="../../index.html">Back to Main page</a></p>
+
+        <script src="../javascript/Week_2/FourKinds.js"></script>
+        <script src="../javascript/Week_2/Calculator.js"></script>
+        <script src="../javascript/Week_2/Song.js"></script>
+        <script src="../javascript/Week_2/Palindrome.js"></script>
+        <script src="../javascript/Week_2/MorseCode.js"></script>
+    </body>
+</html>
