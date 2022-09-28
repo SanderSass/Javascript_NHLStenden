@@ -1,21 +1,6 @@
-class ListOfItems
+var strDef = "";
+function addString(str)
 {
-    array = ["Car", "Machine", "House"];
-
-    constructor(item)
-    {
-        this.item = item;
-    }
-    getList()
-    {
-        return this.array;
-    }
-    addItemIntoList()
-    {
-        this.array.push(this.item)
-    }
+    strDef = strDef.concat(" ", str);
+    document.getElementById("list").innerHTML = strDef;
 }
-
-list = new ListOfItems(item);
-add = list.addItemIntoList();
-document.getElementById("list").innerHTML = list.getList();

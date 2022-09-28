@@ -8,7 +8,6 @@ class HelloWorld{
         return result;
     }
 }
-// var value
-// value = HelloWorld().helloWorld();
+
 value = new HelloWorld();
 document.getElementById("value").innerHTML = value.helloWorld();

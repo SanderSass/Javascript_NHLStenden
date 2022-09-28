@@ -1,4 +1,9 @@
-.h{
+h {
+    text-align: center;
     font-family: Arial;
     font-palette: light;
+}
+
+form {
+    text-align: center;
 }

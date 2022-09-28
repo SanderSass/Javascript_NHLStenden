@@ -6,21 +6,35 @@
 </head>
 <body>
     <h1>Week 1</h1>
+
     <h3>A</h3>
     <p id="value"></p>
+
     <h3>B</h3>
     <p id="calc1"></p>
     <p id="calc2"></p>
     <p id="calc3"></p>
+
     <h3>C</h3>
-    <form action="../javascript/Week%201/ListOfItems.js">
+    <form enctype="multipart/form-data">
         <label>Add new Item:</label><br>
-        <input type="text" id="addItem"><br>
-        <input type="submit" value="Add" onclick="">
+        <p><input type="text" name="newString" id="newString">
+        <input type="button" name="btn" id="btn" onclick="var addText = document.getElementById('newString').value; addString(addText);" value="add"></p>
+        <p id="list"></p>
     </form>
-    <div id="list"></div>
+
+    <h3>D</h3>
+    <form>
+        <label>Add new Shopping Item:</label><br>
+        <p><input type="text" name="newItem" id="newItem">
+        <input type="button" name="addItemBtn" id="addItemBtn" onclick="addItem(newItem)" value="add"></p>
+        <p><input type="button" name="btn" id="showLst" onclick="showList()" value="Show grocery"></p>
+        <p id="shoppingList"></p>
+    </form>
+
     <script src="../javascript/Week%201/HelloWorld.js"></script>
     <script src="../javascript/Week%201/Calculation.js"></script>
     <script src="../javascript/Week%201/ListOfItems.js"></script>
+    <script src="../javascript/Week%201/ShoppingList.js"></script>
 </body>
 </html>
