@@ -1,9 +1,65 @@
-h {
-    text-align: center;
-    font-family: Arial;
-    font-palette: light;
+.container{
+	margin: 0 auto;
+	width: 575px;
 }
 
-form {
-    text-align: center;
+.row{
+	width: auto;
+	margin-bottom: 10px;
+}
+
+.card{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	margin:5px;
+	background-color: #eee;
+}
+
+.pink{
+	background-color: #EE4266;
+}
+
+.orange{
+	background-color: #F7B05B;
+}
+
+.red{
+	background-color: #BF211E;
+}
+.blue{
+	background-color: #CFFCFF;
+}
+.yellow{
+	background-color: #F8E16C;
+}
+.green{
+	background-color: #659157;
+}
+.violet{
+	background-color: #2A1E5C;
+}
+.black{
+	background-color: #0F110C;
+}
+
+.hidden{
+	background-color: #eee;
+}
+
+.done{
+	cursor: default;
+}
+.unclickable{
+	pointer-events: none;
+}
+
+.timer{
+	margin: 0 auto;
+	width: 400px;
+}
+
+#countdown{
+	text-align: center;
+	font-size: 40px;
 }

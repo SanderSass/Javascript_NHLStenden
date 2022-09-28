@@ -15,14 +15,14 @@ for(let color of colors) {
 	var cardAIndex = parseInt(Math.random() * cards.length); //taking random card div
 	var cardA = cards[cardAIndex]; //saving it
 	cards.splice(cardAIndex, 1);//removing from array
-	cardA.className +=  ${color};//adding class of colot
+	cardA.className += ` ${color}`;//adding class of colot
 	cardA.setAttribute('data-color', color);// setting attribute of color
 
 
 	var cardBIndex = parseInt(Math.random() * cards.length);
 	var cardB = cards[cardBIndex];
 	cards.splice(cardBIndex, 1);
-	cardB.className +=  ${color};
+	cardB.className += ` ${color}`;
 	cardB.setAttribute('data-color', color);
 }
 
